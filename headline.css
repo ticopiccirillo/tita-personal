@@ -1,23 +1,35 @@
 main .container{
     display: block;
-    gap: 3em;
     align-items: center;
     align-content: center;
     justify-content: center;
-    margin: 0 auto;
-    height: 100vh;
+    margin: auto;
 }
 
-.container .headline span{
-    font-weight: 300;
-    font-size: 0.5em;
-    color: var(--cor6);
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.577);
+.container .headline{
+    width: auto;
+    height: 70vh;
+}
+
+.container span{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f2e93d;
+    margin: 2em auto;
+    padding: 1em 1em;
+    border-radius: 40px;
+    font-weight: 800;
+    font-size: 1em;
+    color: #102D40;
 }
 
 .container .boneca-texto{
     display: flex;
-    margin: auto;
+    width: auto;
+    margin: 0 auto;
     text-align: justify;
     align-items: center;
     justify-content: center;
@@ -34,12 +46,8 @@ main .container .text p{
     text-align: center;
     align-items: center;
     justify-content: center;
-    max-width: 80%;
+    max-width: 90%;
     height: auto;
-    color: var(--cor6);
-    font-size: 1.2em;
-    font-weight: 500;
-    margin: 1em auto;
     padding: 2em;
     background-color: var(--cor7);
     border-radius: 0 20px;

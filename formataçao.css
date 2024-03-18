@@ -30,7 +30,7 @@ body{
  }
 
  .interface{
-     
+     max-width: 1480px;
      margin: 3% auto;
      display: flex;
  }
@@ -83,4 +83,10 @@ h4{
     max-width: 100%;
     margin: 1em;
     padding: 1em;
+}
+
+p{
+    font-size: 1em;
+    color: var(--cor6);
+    font-weight: 500;
 }

@@ -22,7 +22,10 @@
 
 .slide-box{
     display: flex;
+    width: 50%;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: var(--cor7);
     margin: 1em 0;
     border-radius: 0.8em;
@@ -37,30 +40,46 @@
 }
 
 .slide-box .depoimento-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
     font-weight: 300;
     padding: 1em;
-    text-align: center;
-    padding: 20px;
+    text-align: justify;
+    font-weight: 400;
 }
 
 .slide-box .pessoa img{
-    width: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items:  start;
+    width: 5%;
+    height: auto;
     border-radius: 50%;
     margin-left: 1em;
     margin-bottom: 1em;
+    
 }
 
 .slide-box .pessoa{
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 1em;
 }
 
 .slide-box .pessoa p.nome{
     font-size: 1em;
     font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .slide-box .pessoa p.func-pessoa{
     font-size: 0.8em;
-    
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
