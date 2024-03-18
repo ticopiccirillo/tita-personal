@@ -1,0 +1,66 @@
+.depoimetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.depoimetos-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: 3em;
+    padding: 20px 20px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 0.8em;
+}
+
+.slide-box{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor7);
+    margin: 1em 0;
+    border-radius: 0.8em;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.489);
+    margin-right: 30px;
+}
+
+.slide-box i{
+    font-size: 3em;
+    color: #F28241;
+    align-self: flex-start;
+}
+
+.slide-box .depoimento-txt{
+    font-weight: 300;
+    padding: 1em;
+    text-align: center;
+    padding: 20px;
+}
+
+.slide-box .pessoa img{
+    width: 15%;
+    border-radius: 50%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.slide-box .pessoa{
+    display: flex;
+    gap: 1em;
+}
+
+.slide-box .pessoa p.nome{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.slide-box .pessoa p.func-pessoa{
+    font-size: 0.8em;
+    
+}

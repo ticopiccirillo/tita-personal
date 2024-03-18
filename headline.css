@@ -1,0 +1,48 @@
+main .container{
+    display: block;
+    gap: 3em;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.container .headline span{
+    font-weight: 300;
+    font-size: 0.5em;
+    color: var(--cor6);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.577);
+}
+
+.container .boneca-texto{
+    display: flex;
+    margin: auto;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-boneca img{
+    width: 400px;
+    height: 500px;
+}
+
+main .container .text p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    height: auto;
+    color: var(--cor6);
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 1em auto;
+    padding: 2em;
+    background-color: var(--cor7);
+    border-radius: 0 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.489);
+    line-height: 40px;
+}

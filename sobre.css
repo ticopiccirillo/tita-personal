@@ -1,0 +1,38 @@
+.sobre{
+    display: flex;
+    flex-direction: row;
+    max-width: 1480px;
+    align-items: center;
+    justify-content: center;
+    margin: 8em auto 2em auto;
+    height: 100%;
+}
+
+.sobre .text h2{
+    font-size: 2em;
+}
+
+.sobre .text p{
+    display: flex;
+    flex-direction: column;
+    text-align:justify;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    height: auto;
+    color: var(--cor6);
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 0 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.489);
+    margin: 1em auto;
+    padding: 2em;
+    background-color: var(--cor7);
+    line-height: 40px;
+}
+
+.sobre .img-tita img{
+    width: 300px;
+    border-radius: 50%;
+    margin: auto 0;
+}
