@@ -24,10 +24,29 @@
     border-radius: 0 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.489);
     line-height: 40px;
+    margin: auto;
 }
 
 .sobre .img-tita img{
     width: 300px;
     border-radius: 50%;
     margin: auto 0;
+}
+
+@media screen and (max-width: 810px){
+    .sobre{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: justify;
+        height: auto;
+    }
+
+    .sobre .img-tita img{
+        width: 150px;
+    }
+
+    .sobre .text p{
+        line-height: 25px;
+        display: block;
+    }
 }

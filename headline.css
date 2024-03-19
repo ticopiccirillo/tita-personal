@@ -18,7 +18,7 @@ main .container{
     justify-content: center;
     text-align: center;
     background-color: #f2e93d;
-    margin: 2em auto;
+    margin: 10em auto;
     padding: 1em 1em;
     border-radius: 40px;
     font-weight: 800;
@@ -36,8 +36,8 @@ main .container{
 }
 
 .img-boneca img{
-    width: 400px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
 }
 
 main .container .text p{
@@ -53,4 +53,21 @@ main .container .text p{
     border-radius: 0 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.489);
     line-height: 40px;
+}
+
+@media screen and (max-width: 810px){
+    .container .headline h1{
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    .img-boneca img{
+        display: none;
+    }
+
+    main .container .text p{
+        line-height: 25px;
+        display: block;
+        margin: auto;
+    }
 }

@@ -9,7 +9,9 @@
     --font-primary:"Poppins", sans-serif;
 }
 
-header .interface{
+header {
+    width: 100%
+    
 }
 
 .top-header{
@@ -129,7 +131,7 @@ header .interface{
     text-shadow: 5px 5px 5px rgba(4, 4, 4, 0.5);
  }
 
- .botton-header nav ul li a{
+ .botton-header .botton-nav .botton-menu .menu-botton a{
     color: var(--cor3);
     font-weight: 600;
     font-size: 1.2em;
@@ -140,11 +142,73 @@ header .interface{
     transition: .5s;
 }
 
-.botton-header nav ul li a:hover{
+.botton-header .botton-nav .botton-menu .menu-botton a:hover{
     color: var(--cor3);
     transform: scale(1.2);
  }
-
- .btn-mobile{
+.menu-mobile{
     display: none;
+}
+
+.btn-mobile{
+    display: none;
+}
+
+ /*Responsividade*/
+
+ @media screen and (max-width: 810px) {
+    .botton-menu{
+        display: none;
+     }
+
+     .btn-mobile{
+        display: flex;
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2em;
+        border: none;
+        border-radius: 12px;
+        top: 100px;
+        left: 50px;
+    }
+
+    .btn-mobile:hover{
+        transform: scale(1.2);
+    }
+
+    .menu-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 1000%;
+        height: 100%;
+        
+    }
+
+    .menu-mobile .mobile-menu{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0 auto;
+        height: auto;
+        width: 100%;
+    }
+
+    .menu-mobile .mobile-menu a{
+        display: block;
+        text-decoration: none;
+        color: var(--cor3);
+        font-weight: 600;
+        margin: 0 5em;
+        padding: 1em;
+        height: auto;
+        width: 100%;
+    }
+
  }

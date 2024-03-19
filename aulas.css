@@ -1,4 +1,4 @@
-.Aulas-Planilhas{
+.Consultoria-cards{
     display: flex;
     gap: 2em;
     align-items: center;
@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-.Aulas-Planilhas .text-aulas{
+.Consultoria-cards .text-aulas{
     background-color: var(--cor7);
     width: 400px;
     height: 400px;
@@ -14,7 +14,7 @@
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.489);
 }
 
-.Aulas-Planilhas .text-aulas p{
+.Consultoria-cards .text-aulas p{
     margin: 1em auto;
     padding: 1em;
     color: var(--cor2);
@@ -25,12 +25,12 @@
 
 .consultoria{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.consultoria .Aulas-Planilhas .text-aulas button{
+.consultoria .Consultoria-cards .text-aulas button{
     background-color: #019e06;
     color: var(--cor2);
     padding: 1em 3em;
@@ -42,11 +42,11 @@
     transition: .5s;
 }
 
-.consultoria .Aulas-Planilhas .text-aulas button:hover{
+.consultoria .Consultoria-cards .text-aulas button:hover{
     transform: scale(1.1);
 }
 
-.consultoria .Aulas-Planilhas .text-aulas i{
+.consultoria .Consultoria-cards .text-aulas i{
     color: rgba(0, 0, 0, 0.796);
 }
 
@@ -66,3 +66,32 @@
 .consultoria button:hover{
     transform: scale(1.1);
 }
+
+@media screen and (max-width: 810px) {
+    .consultoria{
+        display: block;
+        align-items: center;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: 0 30%;
+        width: 100%;
+    }
+
+    .Consultoria-cards{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .Consultoria-cards .text-aulas{
+        width: 250px;
+        height: 300px;
+    }
+
+    .Consultoria-cards .text-aulas p{
+        font-size: 1em;
+    }
+}
+

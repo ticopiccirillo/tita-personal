@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="depoimentos.css">
     <link rel="stylesheet" href="footer.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <title>Tita Souza - Personal trainer</title>
 </head>
 <body>
@@ -60,14 +62,13 @@
         </section><!--top-header-->
 
        <section class="botton-header interface">
-           
                 <nav class="botton-nav">
                     <ul class="botton-menu">
-                        <li class="menu-botton">
+                        <li class="menu-botton active">
                             <a class="link-header" href="#sobre">Sobre</a>
                         </li>
                         <li class="menu-botton">
-                            <a class="link-header" href="#aulas">Aulas e Planilhas</a>
+                            <a class="link-header" href="#consultoria">Consultoria</a>
                         </li>
                         <li class="menu-botton">
                             <a class="link-header" href="#projetos">Projetos</a>
@@ -76,10 +77,24 @@
                             <a class="link-header" href="#depoimentos">Depoimentos</a>
                         </li>
                     </ul>
-                    <button id="btn-mobile" aria-expanded="false">
-                        <span id="hamburger"></span>
-                    </button>
-                </nav>
+                    <button class="btn-mobile" id="btn-mobile"><i class="bi bi-list"></i></button>
+                </nav>          
+                <div class="menu-mobile">
+                    <ul class="mobile-menu">
+                        <li class="menu-botton active">
+                            <a class="link-header" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="menu-botton">
+                            <a class="link-header" href="#consultoria">Consultoria</a>
+                        </li>
+                        <li class="menu-botton">
+                            <a class="link-header" href="#projetos">Projetos</a>
+                        </li>
+                        <li class="menu-botton">
+                            <a class="link-header" href="#depoimentos">Depoimentos</a>
+                        </li>
+                    </ul>           
+                </div>
         </section><!--bottom-header---->
     </header>
     <main>
@@ -101,7 +116,7 @@
 
         <section class="sobre interface">
             <div class="text">
-                <h2>Minha história</h2>
+                <h2 id="sobre" >Minha história</h2>
                 <div class="text-sobre">
                     <p>Tira Souza é mais do que apenas um personal trainer - ele é um motivador incansável, um guia confiável e um defensor apaixonado da saúde e do bem-estar. Com anos de experiência no campo do fitness, Tira desenvolveu uma abordagem holística para o treinamento pessoal, combinando exercícios físicos, nutrição e bem-estar mental para criar mudanças duradouras na vida de seus clientes.
                         <br>
@@ -118,8 +133,8 @@
             </div>
         </section>
         <section class="consultoria interface">
-            <h2>Consultoria</h2>
-        <div class="Aulas-Planilhas">      
+            <h2 id="Consultoria">Consultoria</h2>
+        <div class="Consultoria-cards">      
                 <div class="text-aulas">   
                         <h3>Treino Online <i class="bi bi-phone"></i></h3>
                     <div class="horarios">
@@ -144,7 +159,7 @@
         <section class="depoimetos interface">
 
             <section class="projetos-container interface">
-                <h2>Projetos</h2>
+                <h2 id="projetos">Projetos</h2>
                 <div class="projetos">
                     
                     <div class="projeto-card">
@@ -166,15 +181,15 @@
 
             </section><!--projetos-container interface-->
 
-            <h2>Depoimentos</h2>
+            <h2 id="depoimentos">Depoimentos</h2>
            <div class="depoimetos-container interface">
                <div class="interface"> 
                 <div class="slide-box">
                     <i class="bi bi-quote"></i>
                     <p class="depoimento-txt">
-                        Eu sempre comecei meus processos de emagrecimento por dietas alimentares malucas, na hora de começar a parte de exercício físico meu corpo não dava conta e tudo desandava. Foi uma vida de frustrações, emagrece e engorda.... 
-                        Desta vez decidi fazer diferente, comecei por me exercitar, a sua consultoria Tita, na época, me pareceu a melhor escolha, pensei na comodidade de treinar em casa, e hoje percebo que realmente foi, mas não só pela comodidade, eu sei que sem a sua ajuda, sem aquele acolhimento nas horas que não dava e também um "bora agora" pontuais na hora que percebia que dava, eu já teria abandonado. 
-                        Já foram tantos benefícios, que é até difícil listar, hoje voltei a me alimentar melhor, tenho disposição para o que preciso fazer, eu VOLTEI DORMIR, foram mais de 10 anos dormindo mal, alguns períodos até tomei medicamento pra dormir, e hoje, ainda que amamentando durante a noite, eu consigo ter uma noite de sono, levantar disposta. Eu falo que hoje minha maior motivação pra ser disciplinada é poder dormir, pq isso me traz qualidade de vida, disposição pra brincar, correr e pular com minha filha de 2 anos; bom humor, paciência pra lidar com um filho pré adolescente!
+                        Eu sempre comecei meus processos de emagrecimento por dietas alimentares malucas. Foi uma vida de frustrações, emagrece e engorda.... 
+                        Desta vez decidi fazer diferente, comecei por me exercitar, a sua consultoria Tita, na época, me pareceu a melhor escolha, pensei na comodidade de treinar em casa. 
+                        Já foram tantos benefícios, que é até difícil listar, hoje voltei a me alimentar melhor, tenho disposição para o que preciso fazer, eu VOLTEI DORMIR, alguns períodos até tomei medicamento pra dormir, e hoje, ainda que amamentando durante a noite, eu consigo ter uma noite de sono, e levantar disposta. Eu falo que hoje minha maior motivação pra ser disciplinada é poder dormir, por que isso me traz qualidade de vida, disposição pra brincar, correr e pular com minha filha de 2 anos; bom humor, paciência pra lidar com um filho pré adolescente!
                     </p>
                     <div class="pessoa">
                         <img src="imagens/layra.jpeg" alt="foto perfil">
@@ -281,5 +296,6 @@
         </section><!--footer-->
     </footer><!--footer-->
 
+    <script src="script.js"></script>
 </body>
 </html>
