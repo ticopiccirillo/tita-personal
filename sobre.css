@@ -1,7 +1,6 @@
 .sobre{
     display: flex;
     flex-direction: row;
-    max-width: 1480px;
     align-items: center;
     justify-content: center;
     margin: 8em auto 2em auto;

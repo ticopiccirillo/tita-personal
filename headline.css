@@ -8,7 +8,9 @@ main .container{
 
 .container .headline{
     width: auto;
-    height: 70vh;
+    height: 150%;
+    margin: 150px auto;
+    padding: 2em;
 }
 
 .container span{

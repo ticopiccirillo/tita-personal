@@ -10,24 +10,87 @@
 }
 
 header {
-    width: 100%
-    
+    width: 100%; 
+    position: fixed;
+    z-index: 1;
+    background-color: var(--cor1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
 }
 
 .top-header{
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     padding: 0 2em;
     width: 100%;
+    height: auto;
+    background-color: var(--cor1);
 }
 
 .logo img.img-logo{
-    width: 20%;
+    display: block;
+    width: 40%;
+}
+
+.botton-nav .botton-menu{
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.botton-nav .botton-menu .menu-botton{
+    display: inline-flex;
+    color: var(--cor6);
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    box-shadow: none;
+    padding: 10px 40px;
+    margin: 0 auto;
+    padding: 0 1em;
+    width: auto;
+    cursor: pointer;
+    transition: .5s;
+    text-shadow: 5px 5px 5px rgba(4, 4, 4, 0.5);
+} 
+
+.botton-nav .botton-menu .menu-botton:hover{
+    color: var(--cor6);
+    transform: scale(1.1);
+ }
+
+.botton-nav .botton-menu .menu-botton a{
+    color: var(--cor3);
+    width: auto;
+    font-weight: 600;
+    font-size: 1.2em;
+    display: flex;
+    text-decoration: none;
+    transition: .5s;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.botton-nav .botton-menu .menu-botton a:hover{
+    color: var(--cor3);
+    transform: scale(1.2);
+ }
+.menu-mobile{
+    display: none;
+}
+
+.btn-mobile{
+    display: none;
 }
 
 .btn-contatos{
     display: flex;
+    width: auto;
 }
 
 .contatos-btn{
@@ -92,66 +155,6 @@ header {
 
 .contatos-btn .btn:hover::before{
     opacity: 1;
-}
-
-/*botton header*/
-
-.botton-header{
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    padding: 1em;
-    width: 100%;
-}
-
-.botton-header .botton-nav {
-    width: 100%;
-    margin: auto;
-}
-.botton-header .botton-nav .botton-menu .menu-botton{
-    display: inline-block;
-    color: var(--cor6);
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    box-shadow: none;
-    padding: 10px 40px;
-    margin: 2% auto;
-    width: auto;
-    cursor: pointer;
-    transition: .5s;
-} 
-
-.botton-header .botton-nav .botton-menu .menu-botton:hover{
-    color: var(--cor6);
-    transform: scale(1.1);
-    text-shadow: 5px 5px 5px rgba(4, 4, 4, 0.5);
- }
-
- .botton-header .botton-nav .botton-menu .menu-botton a{
-    color: var(--cor3);
-    font-weight: 600;
-    font-size: 1.2em;
-    display: flex;
-    text-decoration: none;
-    width: auto;
-    justify-content: space-between;
-    transition: .5s;
-}
-
-.botton-header .botton-nav .botton-menu .menu-botton a:hover{
-    color: var(--cor3);
-    transform: scale(1.2);
- }
-.menu-mobile{
-    display: none;
-}
-
-.btn-mobile{
-    display: none;
 }
 
  /*Responsividade*/
