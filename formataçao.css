@@ -41,55 +41,61 @@ body{
  }
 
  h1{
-    color: var(--cor3);
-    text-shadow: var(--sombra);
+    display: block;
     text-align: center;
     align-items: center;
     justify-content: center;
     max-width: 80%;
     margin: auto;
     padding: 1em;
+    color: var(--cor3);
     font-size: 2.5em;
     line-height: 60px;
     font-weight: 900;
-    font-family: var(--font-primary);
+    text-shadow: var(--sombra);
 }
 
 h2{
-    color: var(--cor3);
+    display: block;
     text-align: center;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
-    margin: 1em auto;
+    max-width: 80%;
+    margin: auto;
     padding: 1em;
-    font-size: 1.8em;
-    font-weight: 600;
+    color: var(--cor3);
+    font-size: 2em;
+    font-weight: 800;
     text-shadow: var(--sombra);
 }
 
 h3{
-    color: var(--cor4);
+    display: block;
     text-align: center;
     align-items: center;
     justify-content: center;
+    max-width: 80%;
+    margin: auto;
+    padding: 1em;
+    color: var(--cor4);
+    font-size: 1.5em;
     font-weight: 600;
     max-width: 100%;
-    margin: 1em auto;
-    padding: 1em;
     text-shadow: var(--sombra);
 }
 
 h4{
-    color: var(--cor4);
+    display: block;
     text-align: center;
-    justify-content: center;
     align-items: center;
-    display: block;    
-    max-width: 100%;
-    margin: 1em;
-    padding: 1em;
+    justify-content: center;
+    max-width: 80%;
+    margin: 1em auto;
+    padding: 0 1em;
+    color: var(--cor4);
+    font-size: 1.5em;
     font-weight: 600;
+    max-width: 100%;
     text-shadow: var(--sombra);
 }
 
@@ -97,6 +103,12 @@ p{
     font-size: 1em;
     color: var(--cor6);
     font-weight: 500;
+}
+
+strong{
+    color: var(--cor2);
+    font-weight: bold;
+    margin: 1em auto;
 }
 
 

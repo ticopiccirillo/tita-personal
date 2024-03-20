@@ -15,16 +15,17 @@ main .container{
 
 .container span{
     display: flex;
-    width: 50%;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #f2e93d;
-    margin: 10em auto;
+    width: 50%;
+    height: auto;
+    margin: 3em auto;
     padding: 1em 1em;
-    border-radius: 40px;
+    border-radius: 80px;
     font-weight: 800;
-    font-size: 1em;
+    font-size: 2em;
+    background-color: #f2e93d;
     color: #102D40;
 }
 

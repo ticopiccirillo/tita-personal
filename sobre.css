@@ -7,10 +7,6 @@
     height: 100vh;
 }
 
-.sobre .text h2{
-    font-size: 2em;
-}
-
 .sobre .text p{
     display: flex;
     flex-direction: column;
@@ -18,16 +14,17 @@
     justify-content: center;
     max-width: 90%;
     height: auto;
+    margin: auto;
     padding: 2em;
+    font-size: 1em;
+    line-height: 35px;
     background-color: var(--cor7);
     border-radius: 0 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.489);
-    line-height: 40px;
-    margin: auto;
 }
 
 .sobre .img-tita img{
-    width: 300px;
+    width: 250px;
     border-radius: 50%;
     margin: auto 0;
 }
