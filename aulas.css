@@ -1,5 +1,6 @@
 .Consultoria-cards{
     display: flex;
+    width: 100%;
     gap: 2em;
     align-items: center;
     justify-content: center;
@@ -25,6 +26,7 @@
 
 .consultoria{
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -68,30 +70,45 @@
 }
 
 @media screen and (max-width: 810px) {
-    .consultoria{
-        display: block;
-        align-items: center;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        padding: 0 30%;
-        width: 100%;
-    }
-
+   
     .Consultoria-cards{
-        display: block;
+        display: flex;
+        width: 100%;
+        gap: 2em;
         align-items: center;
         justify-content: center;
-        margin: auto;
+        text-align: center;
     }
 
     .Consultoria-cards .text-aulas{
-        width: 250px;
-        height: 300px;
+        width: 230px;
+        height: 280px;
+    }
+
+    .Consultoria-cards .text-aulas h3{
+        font-size: 1em;
     }
 
     .Consultoria-cards .text-aulas p{
         font-size: 1em;
     }
+}
+
+@media screen and (max-width: 430px){
+    .Consultoria-cards{
+        display: inline-block;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .Consultoria-cards .text-aulas{
+        display: block;
+        align-self: center;
+        margin: auto;
+        margin-bottom: 2em;
+        width: 90%;
+        height: 230px;
+    }
+
 }
 

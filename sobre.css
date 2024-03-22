@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     margin: 8em auto 2em auto;
-    height: 100vh;
+    height: auto;
 }
 
 .sobre .text p{
@@ -44,5 +44,16 @@
     .sobre .text p{
         line-height: 25px;
         display: block;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .sobre .img-tita img{
+        width: 200px;
+    }
+
+    .sobre .text p{
+        text-align: justify;
+        line-height: 30px;
     }
 }

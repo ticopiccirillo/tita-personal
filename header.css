@@ -1,13 +1,4 @@
-:root{
-    --cor1:#166273;
-    --cor2:#102D40;
-    --cor3:#f2e93d;
-    --cor4:#F28241;
-    --cor5:#C8D94A;
-    --cor6:#0D0D0D;
-    --cor7:#ffff;
-    --font-primary:"Poppins", sans-serif;
-}
+
 
 header {
     width: 100%; 
@@ -25,6 +16,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 0 2em;
+    margin: auto;
     width: 100%;
     height: auto;
     background-color: var(--cor1);
@@ -32,11 +24,11 @@ header {
 
 .logo img.img-logo{
     display: block;
-    width: 40%;
+    width: 100px;
 }
 
 .botton-nav .botton-menu{
-   display: inline-flex;
+   display: none;
    align-items: center;
    justify-content: center;
     width: 100%;
@@ -82,11 +74,22 @@ header {
  }
 .menu-mobile{
     display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor3);
 }
 
-.btn-mobile{
-    display: none;
-}
+.btn-mobile{    
+        display: none;
+        background-color: transparent;
+        width: 60px;
+        height: 60px;
+        font-size: 3em;
+        border: none;
+        border-radius: 12px;
+    }
 
 .btn-contatos{
     display: flex;
@@ -113,7 +116,7 @@ header {
 }
 
 .contatos-btn .btn:hover{
-    width: 180px;
+    width: 160px;
 }
 
 .contatos-btn .btn span{
@@ -160,23 +163,31 @@ header {
  /*Responsividade*/
 
  @media screen and (max-width: 810px) {
-    .botton-menu{
-        display: none;
-     }
 
-     .btn-mobile{
-        display: flex;
-        background-color: transparent;
-        width: 50px;
-        height: 50px;
-        justify-content: center;
+    .top-header{
+        display: block;
+        margin: auto;
+        padding: 2em auto;
         align-items: center;
-        text-align: center;
-        font-size: 2em;
-        border: none;
-        border-radius: 12px;
-        top: 100px;
-        left: 50px;
+        justify-content: center;       
+    }
+
+    .logo img.img-logo{
+        display: block;
+        margin: auto;
+    }
+
+    .botton-nav{
+        justify-content: space-evenly;
+        width: auto;
+    }
+
+    .btn-contatos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 3em auto;
+        width: auto; 
     }
 
     .btn-mobile:hover{
@@ -184,11 +195,11 @@ header {
     }
 
     .menu-mobile{
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 1000%;
+        width: 100%;
         height: 100%;
         
     }
@@ -212,6 +223,40 @@ header {
         padding: 1em;
         height: auto;
         width: 100%;
+    }
+ }
+
+ @media screen and (max-width: 430px) {
+    .top-header{
+        height: auto;
+        margin: auto;
+    }
+
+    .logo img.img-logo{
+        display: block;
+        margin: auto;
+    }
+
+    .botton-nav{
+        justify-content: space-evenly;
+        width: auto;
+        display: block;
+    }
+
+    .btn-mobile{
+        display: none;
+        background-color: transparent;
+        width: 60px;
+        height: 60px;
+        font-size: 3em;
+        border: none;
+        border-radius: 12px;
+    }
+
+    .menu-mobile{
+        display: inline-block;
+        text-align: center;
+        margin: ;
     }
 
  }

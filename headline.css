@@ -7,10 +7,10 @@ main .container{
 }
 
 .container .headline{
-    width: auto;
-    height: 150%;
+    width: 100%;
+    height: auto;
     margin: 150px auto;
-    padding: 2em;
+    padding: 1em;
 }
 
 .container span{
@@ -60,10 +60,18 @@ main .container .text p{
 
 @media screen and (max-width: 810px){
     .container .headline h1{
-        font-size: 2em;
+        width: 100%;
+        font-size: 1.8em;
+        text-align: center;
         font-weight: 600;
+        margin: 0 auto;
     }
 
+    .container span{
+        width: 80%;
+        font-size: 1.5em;
+    }
+        
     .img-boneca img{
         display: none;
     }
@@ -72,5 +80,26 @@ main .container .text p{
         line-height: 25px;
         display: block;
         margin: auto;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .container .headline h1{
+        width: 100%;
+        height: auto;
+        margin-top: 60px;
+        font-size: 1.1em;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .container span{
+        width: 100%;
+        font-size: 1em;
+    }
+
+    main .container .text p{
+        text-align: justify;
+        line-height: 30px;
     }
 }
