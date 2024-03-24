@@ -45,26 +45,25 @@ main .container{
 
 main .container .text p{
     display: flex;
-    flex-direction: column;
-    text-align: center;
     align-items: center;
     justify-content: center;
     max-width: 90%;
-    height: auto;
+    height: 100%;
     padding: 2em;
     background-color: var(--cor7);
     border-radius: 0 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.489);
-    line-height: 40px;
+    line-height: 30px;
 }
 
 @media screen and (max-width: 810px){
     .container .headline h1{
         width: 100%;
+        height: auto;
         font-size: 1.8em;
         text-align: center;
         font-weight: 600;
-        margin: 0 auto;
+        margin: 200px auto;
     }
 
     .container span{
@@ -77,7 +76,7 @@ main .container .text p{
     }
 
     main .container .text p{
-        line-height: 25px;
+        line-height: 20px;
         display: block;
         margin: auto;
     }
@@ -87,19 +86,20 @@ main .container .text p{
     .container .headline h1{
         width: 100%;
         height: auto;
-        margin-top: 60px;
-        font-size: 1.1em;
-        line-height: 40px;
+        margin-top: 130px;
+        font-size: 1em;
+        line-height: 25px;
         text-align: center;
     }
 
     .container span{
         width: 100%;
-        font-size: 1em;
+        font-size: 0.8em;  
     }
 
     main .container .text p{
-        text-align: justify;
-        line-height: 30px;
+        line-height: 25px;
+        display: block;
+        margin: auto;
     }
 }

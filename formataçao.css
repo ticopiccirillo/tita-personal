@@ -111,4 +111,8 @@ strong{
     margin: 1em auto;
 }
 
-
+@media screen and (max-width: 430px){
+h2{
+    font-size: 1.5em;
+}
+}

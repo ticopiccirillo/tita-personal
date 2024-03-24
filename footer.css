@@ -1,10 +1,9 @@
 .footer .top-header{
     display: flex;
     width: 100%;
-    height: auto;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .footer .text-footer{
@@ -12,8 +11,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: auto;
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
     color: var(--cor6);
     font-size: 1em;
 }
@@ -22,42 +21,84 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
-    margin: auto;
+    margin:  0 auto;
 }
 
 .footer .top-header .footer-botton .img-logo{
-    width: 100px;
+    display: flex;
+    width: 150px;
+}
+
+@media screen and (max-width: 810px){
+    .footer .top-header{
+        display: flex;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer .top-header .footer-botton .img-logo{
+        display: flex;
+        width: 90%;
+        align-items: center;
+        justify-content: space-between; 
+    }
+
+    .footer .top-header .footer-botton{
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+    }
 }
 
 @media screen and (max-width: 430px){
     footer .top-header{
         display: flex;
-        width: 100%;
+        width: 90%;
         height: auto;
         align-items: center;
         justify-content: center;
         margin: auto;
     }
-
+    
     .footer .text-footer{
-        width: 100%;
+        width: 90%;
         font-size: 0.6em;
     }
 
     .footer .top-header .footer-botton .img-logo{
-        width: 100px;
+        display: block;
+        width: 150px;
+        height: 100px;
         align-items: center;
         justify-content: center;
-        margin: auto;
-        background-color: aqua;
+        margin: 0 auto;
     }
 
     .footer .top-header .footer-botton{
         display: inline-block;
+        width: 100%;
         align-items: center;
         justify-content: center;
         align-items: center;
         margin: auto;
+    }
+
+    .footer .top-header .footer-botton .btn-contatos-footer .contatos-btn {
+       display: flex;
+       width: 90%;
+       margin: 20px auto;
+    }
+
+    .footer .top-header .footer-botton .btn-contatos-footer .contatos-btn .btn:hover{
+        width: 35px;
+    }
+
+    .contatos-btn .btn .icon{
+        font-size: 1em;
+    }
+
+    .contatos-btn .btn .text{
+        display: none;
     }
 }

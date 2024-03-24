@@ -24,11 +24,13 @@ header {
 
 .logo img.img-logo{
     display: block;
-    width: 100px;
+    width: 200px;
+    background-color: var(--cor7);
+    border-radius: 50%;
 }
 
 .botton-nav .botton-menu{
-   display: none;
+   display: flex;
    align-items: center;
    justify-content: center;
     width: 100%;
@@ -99,6 +101,7 @@ header {
 .contatos-btn{
      list-style-type: none;
      display: flex;
+     width: auto;
      position: relative;
      gap: 40px;
 }
@@ -165,21 +168,27 @@ header {
  @media screen and (max-width: 810px) {
 
     .top-header{
-        display: block;
-        margin: auto;
-        padding: 2em auto;
+        display: flex;
+        width: 100%;
         align-items: center;
-        justify-content: center;       
+        justify-content: space-between;      
     }
 
     .logo img.img-logo{
-        display: block;
-        margin: auto;
+        display: flex;
+        margin: 20px auto;
+        width: 200px;
+        height: auto;
     }
 
     .botton-nav{
         justify-content: space-evenly;
         width: auto;
+        margin: 0 auto;
+    }
+
+    .botton-nav .botton-menu{
+        display: none;
     }
 
     .btn-contatos{
@@ -188,6 +197,11 @@ header {
         justify-content: center;
         margin: 3em auto;
         width: auto; 
+    }
+
+    .contatos-btn .btn{
+        width: 50px;
+        height: 50px;
     }
 
     .btn-mobile:hover{
@@ -228,6 +242,8 @@ header {
 
  @media screen and (max-width: 430px) {
     .top-header{
+        display: flex;
+        flex-direction: column;
         height: auto;
         margin: auto;
     }
@@ -235,13 +251,43 @@ header {
     .logo img.img-logo{
         display: block;
         margin: auto;
+        width: 130px;
+        margin-top: 1.5em;
     }
 
     .botton-nav{
         justify-content: space-evenly;
         width: auto;
         display: block;
+    
     }
+
+    .top-header .btn-contatos .contatos-btn{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        margin-right: 50px;
+    }
+
+    .contatos-btn .btn{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        width: 35px;
+        height: 35px;
+    }
+
+    .contatos-btn .btn:hover{
+        width: 35px;
+    }
+
+    .contatos-btn .btn .text{
+        display: none;
+    }
+
+    .contatos-btn .btn:hover .icon{
+        transform: scale(1);
+     }
 
     .btn-mobile{
         display: none;

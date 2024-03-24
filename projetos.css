@@ -46,12 +46,14 @@
         width: 100%;
     }
 
-    .projetos-container .projetos .projeto-car{
-        width: 250px;
+    .projetos-container .projetos .projeto-card{
+        width: 200px;
         height: auto;
+       
     }
 
     .projetos-container .projetos .projeto-card img{
+        display: flex;
         width: 230px;
         height: 280;
     }
@@ -75,4 +77,3 @@
         width: 90%;
         height: 280;
     }
-}
