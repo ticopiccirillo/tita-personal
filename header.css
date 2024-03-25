@@ -30,7 +30,7 @@ header {
     border-radius: 50%;
 }
 
-.botton-nav .botton-menu{
+.nav .menu{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,7 +38,7 @@ header {
     margin: 2em auto;
 }
 
-.botton-nav .botton-menu .menu-botton{
+.nav .menu .menu-list1{
     display: flex;
     color: var(--cor6);
     align-items: center;
@@ -54,12 +54,12 @@ header {
     text-shadow: 5px 5px 5px rgba(4, 4, 4, 0.5);
 } 
 
-.botton-nav .botton-menu .menu-botton:hover{
+.nav .menu .menu-list1:hover{
     color: var(--cor6);
     transform: scale(1.1);
  }
 
-.botton-nav .botton-menu .menu-botton a{
+.nav .menu .menu-list1 a{
     color: var(--cor3);
     width: auto;
     font-weight: 600;
@@ -71,7 +71,7 @@ header {
     padding: 0 2em;
 }
 
-.botton-nav .botton-menu .menu-botton a:hover{
+.nav .menu .menu-list1 a:hover{
     color: var(--cor3);
     transform: scale(1.2);
  }
@@ -148,73 +148,70 @@ header {
 .contatos-btn .btn:hover::before{
     opacity: 1;
 }
-/*btn mobile*/
-
-.btn-mobile{
-    display: none;
-    width: 50px;
-    height: 50px;
-    border: 2px solid white;
-    background-color: transparent;
-    border-radius: 12px;
-    margin-bottom: .5em;
-}
-
-.btn-mobile .linha{
-    display: block;
-    width: 75%;
-    height: 3px;
-    background-color: white;
-    margin: 6px auto;
-    position: relative;
-    transform-origin: center;
-    cursor: pointer;
-    transition: .2s;
-}
-
-.btn-mobile.active{
-    border: 3px solid red;
-}
-
-.btn-mobile.active .linha:nth-child(1) {
-    transform: translateY(4px) rotate(-405deg);
-    background-color: red;
-}
-
-.btn-mobile.active .linha:nth-child(2) {
-    transform: translateY(-4px) rotate(405deg);
-    background-color: red;
-}
-
-.btn-mobile.active .linha:nth-child(3) {
-    display: none;
-}
 
 /* menu mobile*/
 
-.menu-mobile{
+.top-header .menu-mobile{
     display: none;
-    width: 100%;
-    height: 0;
-    position: absolute;
-    top: 0;
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    top: 280px;
     left: 0;
-    visibility: hidden;
-    transition: .5s;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: var(--cor1);
+    overflow: hidden;
+    transition: .8s;
 }
 
-.menu-mobile .menu-list a{
+.menu-mobile.abrir-menu{
+    width: 100%;
+    display: none;
+}
+
+.top-header .btn-abrir-menu i{
+    display: none;
+    color: var(--cor6);
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.top-header .menu-mobile .menu-list{
     display: block;
     width: 100%;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.top-header .menu-mobile .menu-list a{
+    display: block;
+    width: 100%;
+    color: var(--cor3);
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 1.5em 5%;
     text-decoration: none;
     margin: auto;
-    padding: 0 30px;
-    font-size: 1.5em;
     transition: .5s;
 }
 
-.menu-mobile .menu-list a:hover{
+.top-header .menu-mobile .menu-list a:hover{
+    color: var(--cor4);
     width: 100%;
+}
+
+.top-header .menu-mobile .btn-fechar{
+    padding: 1em 5%;
+}
+.top-header .menu-mobile .btn-fechar i{
+    color: var(--cor6);
+    font-size: 2em;
+    font-weight: 900;
 }
 
 @media screen and (max-width: 1300px){
@@ -230,7 +227,7 @@ header {
         width: auto;
     }
 
-    .botton-nav .botton-menu{
+    .nav .menu{
         display: none;
         width: 100%;
         height: 45vh;
@@ -243,7 +240,7 @@ header {
         z-index: 10;
     }
 
-    .botton-nav .botton-menu .menu-botton{
+    .nav .menu .menu-list{
         display: none;
         width: 100%;
         margin: auto;
@@ -253,7 +250,7 @@ header {
         justify-content: center;
     }
     
-    .botton-nav .botton-menu .menu-botton a{
+    .nav .menu .menu-list a{
        display: none;
        width: 100%;
        height: auto;
@@ -263,61 +260,24 @@ header {
        padding: 1em;
     }
 
-    .menu-mobile{
-        display: none;
-        width: 100%;
-        height: calc(100vh - 90px);
+    .top-header .btn-abrir-menu i{
+        display: block;
+        color: var(--cor6);
+        font-size: 3em;
+        font-weight: 900;
     }
-
-    .menu-mobile .menu-list{
+    
+    .top-header .menu-mobile .menu-list{
         display: block;
         width: 100%;
-        margin: auto;
         text-align: center;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--cor1);
-        height: auto;
-        position: relative;
-        top: 180px;
-        left: 0;
-        visibility: visible;
-        transition: .5s;
-    }
-
-    .menu-mobile .menu-list .menu{
-        background-color: var(--cor1);
-        display: block;
-        width: 100%;
-        margin: auto;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
         list-style-type: none;
         text-decoration: none;
-        margin: auto;
-        padding: 1em;
     }
 
-    .menu-mobile .menu-list .menu a{
+    .top-header .menu-mobile{
         display: block;
-        width: 100%;
-        margin: auto;
-        color: var(--cor3);
-        padding: 1em 0;
-        margin: auto;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .menu-mobile .menu-list .menu a:hover{
-        background-color: var(--cor2);
-    }
-
-    .btn-mobile{
-        display: block;
-    }
+      }
 
 }
 
@@ -334,8 +294,8 @@ header {
 
     .logo img.img-logo{
         display: flex;
-        margin: 20px auto;
-        width: 150px;
+        margin: 20px 5%;
+        width: 120px;
         height: auto;
     }
 
@@ -356,22 +316,22 @@ header {
         transform: scale(1.2);
     }
 
-    .menu-mobile{
-        display: none;
-        position: absolute;
+    .menu-mobile.abrir-menu{
         width: 100%;
-        height: auto;
+        display: block;
+    }
+    
+    .top-header .btn-abrir-menu i{
+        display: block;
+        color: var(--cor6);
+        font-size: 3em;
+        font-weight: 900;
     }
 
-    .menu-mobile .mobile-menu{
-        display: block;
-        width: 100%;
+    .top-header .menu-mobile{
+      display: block;
     }
 
-    .menu-mobile .mobile-menu a{
-        display: block;
-        width: 100%;  
-    }
  }
 
  @media screen and (max-width: 430px) {
@@ -385,11 +345,11 @@ header {
     .logo img.img-logo{
         display: block;
         margin: auto;
-        width: 130px;
+        width: 100px;
         margin-top: 1.5em;
     }
 
-    .botton-nav{
+    .nav{
         justify-content: space-evenly;
         width: auto;
         display: none;
@@ -423,34 +383,8 @@ header {
         transform: scale(1);
      }
 
-    .btn-mobile{
-        display: none;
-        background-color: transparent;
-        width: 60px;
-        height: 60px;
-        font-size: 3em;
-        border: none;
-        border-radius: 12px;
-    }
-
-    .menu-mobile{
-        font-size: 1em;
-    }
-
-    .menu-mobile .menu-list{
-        height: auto;
-        margin: auto;
-        top: 340px;
-        left: 0;
-        font-size: 1em;
-    }
-
-    .menu-mobile .menu-list .menu a{
-        font-size: 1em;
-    }
-
-    .btn-mobile{
+     .top-header .menu-mobile{
         display: block;
-    }
+      }
 
  }

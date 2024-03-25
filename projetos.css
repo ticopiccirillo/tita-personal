@@ -40,6 +40,16 @@
     border-radius: 20px;
 }
 
+@media screen and (max-width: 1300px){
+    .projetos-container .projetos .projeto-card{
+        width: 100%;
+        height: auto;
+       background-color: blue;
+    }
+
+   
+}
+
 @media screen and (max-width: 810px) {
 
     .projetos-container .projetos{

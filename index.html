@@ -18,16 +18,13 @@
     <link rel="stylesheet" href="depoimentos.css">
     <link rel="stylesheet" href="footer.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="btnMobile.js"></script>
-    <script src="menuMobile.js"></script>
+   <script src="script/menu.js" defer></script>
 
     <title>Tita Souza - Personal trainer</title>
 </head>
 <body class="interface">
     <header>
-        <section class="top-header section-container">
+        <section class="top-header          section-container">
             <!--div-logo-->
                 <div class="logo">
                     <a href="#">
@@ -36,57 +33,58 @@
                 </div>
             <!--div-logo-->
 
-                <!--botton-nav-->
-                <nav class="botton-nav">
-                    <ul class="botton-menu">
-                        <li class="menu-botton">
+                <!--nav-->
+                <nav class="nav">
+                    <ul class="menu">
+                        <li class="menu-list1">
                             <a class="link-header" href="#sobre">Sobre</a>
                         </li>
 
-                        <li class="menu-botton">
+                        <li class="menu-list1">
                             <a class="link-header" href="#consultoria">Consultoria
 
                             </a>
                         </li>
 
-                        <li class="menu-botton">
+                        <li class="menu-list1">
                             <a class="link-header" href="#projetos">Projetos
 
                             </a>
                         </li>
 
-                        <li class="menu-botton">
+                        <li class="menu-list1">
                             <a class="link-header" href="#depoimentos">Depoimentos
                             </a>
                         </li>
                     </ul>
-                </nav><!--botton-nav-->
+                </nav><!--nav-->
 
                 <!--Menu mobile-->
-                <nav class="menu-mobile" id="menu-mobile">
-                    <ul class="menu-list">
-                        <li class="menu">
-                            <a class="link-header" href="#sobre">Sobre</a>
-                        </li>
 
-                        <li class="menu">
-                            <a class="link-header" href="#consultoria">Consultoria
-
-                            </a>
-                        </li>
-
-                        <li class="menu">
-                            <a class="link-header" href="#projetos">Projetos
-
-                            </a>
-                        </li>
-
-                        <li class="menu">
-                            <a class="link-header" href="#depoimentos">Depoimentos
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                
+                <div class="menu-mobile" id="menu-mobile" >
+                    <div class="btn-fechar">
+                        <i class="bi bi-x-lg"></i>
+                    </div> 
+                        <ul class="menu-list">
+                            <li class="menu">
+                                <a class="link-header" href="#sobre">Sobre</a>
+                            </li>
+                            <li class="menu">
+                                <a class="link-header" href="#consultoria">Consultoria
+                                </a>
+                            </li>
+                            <li class="menu">
+                                <a class="link-header" href="#projetos">Projetos
+                                </a>
+                            </li>
+                            <li class="menu">
+                                <a class="link-header" href="#depoimentos">Depoimentos
+                                </a>
+                            </li>
+                            
+                        </ul>          
+                </div>
                 <!--Menu mobile-->
 
                <!--btn-conttos-->
@@ -118,15 +116,10 @@
                         </a>
                     </ul>
                 </div>
-                <!--btn-conttos-->
-
-                <!--btn-mobile-->
-                    <button onclick="animar()" class="btn-mobile" id="btn-mobile">
-                        <span class="linha"></span>
-                        <span class="linha"></span>
-                        <span class="linha"></span>
-                    </button>
-                <!--btn-mobile-->
+                <!--btn-conttos-->    
+                <div class="btn-abrir-menu" id="btn-abrir-menu" >
+                    <i class="bi bi-list"></i>
+                </div>      
         </section><!--top-header-->
     </header>
     <main>
