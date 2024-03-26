@@ -8,14 +8,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 150px;
+    height: auto;
 }
 
 .top-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2em;
     margin: auto;
     width: 100%;
     height: auto;
@@ -24,8 +23,10 @@ header {
 
 .logo img.img-logo{
     display: block;
-    width: 150px;
-    margin-top: 2em;
+    width: 140px;
+    height: 140px;
+    margin: 2em;
+    padding-bottom: 1em;
     background-color: var(--cor7);
     border-radius: 50%;
 }
@@ -163,7 +164,7 @@ header {
     justify-content: center;
     list-style-type: none;
     text-decoration: none;
-    background-color: var(--cor1);
+    background-color: var(--cor2);
     overflow: hidden;
     transition: .8s;
 }
@@ -191,13 +192,13 @@ header {
 .top-header .menu-mobile .menu-list a{
     display: block;
     width: 100%;
-    color: var(--cor3);
-    font-size: 1.2em;
+    color: #f2e93d;
+    font-size: 1.5em;
     font-weight: 600;
     padding: 1.5em 0;
     text-decoration: none;
     margin: auto;
-    transition: .5s;
+    transition: .8s;
 }
 
 .top-header .menu-mobile .menu-list a:hover{
@@ -220,12 +221,14 @@ header {
     .top-header{
         display: flex;
         width: 100%;
+        height: auto;
         align-items: center;
         justify-content: space-around;
     }
 
     .logo{
-        width: auto;
+        display: block;
+    
     }
 
     .nav .menu{
@@ -278,7 +281,13 @@ header {
 
     .top-header .menu-mobile{
         display: block;
+        position: absolute;
+        top: 195px;
       }
+
+      .btn-contatos{
+        display: none;
+    }
 
 }
 
@@ -290,22 +299,19 @@ header {
         display: flex;
         width: 100%;
         align-items: center;
-        justify-content: space-between;      
+        justify-content: space-around;      
     }
 
     .logo img.img-logo{
-        display: flex;
+        display: block;
         margin: 20px 5%;
         width: 120px;
-        height: auto;
+        height: 120px;
     }
 
     .btn-contatos{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 3em auto;
-        width: auto; 
+        display: none;
+ 
     }
 
     .contatos-btn .btn{
@@ -340,16 +346,19 @@ header {
  @media screen and (max-width: 430px) {
     .top-header{
         display: flex;
-        flex-direction: column;
-        height: auto;
+        justify-content: space-around;
+        align-items: center;
         margin: auto;
+        background-color: var(--cor1);
     }
 
     .logo img.img-logo{
         display: block;
         margin: auto;
-        width: 100px;
-        margin-top: 1.5em;
+        margin-top: 10px;
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
     }
 
     .nav{
@@ -359,11 +368,8 @@ header {
     
     }
 
-    .top-header .btn-contatos .contatos-btn{
-        display: flex;
-        width: 100%;
-        margin: 0 auto;
-        margin-right: 50px;
+    .btn-contatos {
+            display: none;
     }
 
     .contatos-btn .btn{
@@ -389,7 +395,7 @@ header {
      .top-header .menu-mobile{
         display: block;
         position: absolute;
-        top: 326px;
+        top: 130px;
       }
 
  }
