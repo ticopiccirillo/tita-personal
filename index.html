@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <link rel="stylesheet" href="formataçao.css">
@@ -19,6 +27,7 @@
     <link rel="stylesheet" href="footer.css">
 
    <script src="script/menu.js" defer></script>
+   <script src="script/scroll.js" defer></script>
 
     <title>Tita Souza - Personal trainer</title>
 </head>
@@ -143,7 +152,7 @@
         </div><!--boneca-texto-->
         </section>
 
-        <section class="sobre section-container">
+        <section class="sobre section-container" id="sobre">
             <div class="text">
                 <h2 id="sobre-titulo" >Minha história</h2>
                 <div class="text-sobre">
@@ -159,36 +168,40 @@
             </div>
             </div>
             <div class="img-tita">
-                <img src="imagens/boneca-verde.jpg" alt="">
+                <img src="imagens/tita perfil.jpeg" alt="">
             </div>
         </section>
 
-        <section class="consultoria section-container">
-            <h2 id="Consultoria">Consultoria</h2>
-        <div class="Consultoria-cards">      
-                <div class="text-aulas">   
-                        <h3>Treino Online <i class="bi bi-phone"></i></h3>
-                    <div class="horarios">
-                                <p>Chamada de video, com hora marcada. <br> <i class="bi bi-person-video"></i></p>                      
-                            </div>
+        <section class="consultoria section-container" >
+            <div class="consultorias" id="Consultoria">
+                <h2 >Consultoria</h2>
+                <div class="Consultoria-cards">
+                    <div class="text-aulas">
+                        <h3>Treino Online <i class="bi bi-phone"></i>
+                        </h3>
+                        <div class="horarios">
+                            <p>Chamada de video, com hora marcada. <br> <i class="bi bi-person-video"></i>
+                            </p>
+                        </div>
                     </div><!--text-aulas-->
-
                     <div class="text-aulas">
-                                <h3>Treino Presencial <i class="bi bi-person-raised-hand"></i></i></h3>
-                            <p>Com hora marcada, na academia, na praça, ou na praia.</p>                           
+                            <h3>Treino Presencial <i class="bi bi-person-raised-hand"></i>
+                            </h3>
+                            <p>Com hora marcada, na academia, na praça, ou na praia.</p>
                     </div><!--text-->
-
-                    <div class="text-aulas">
-                        <h3>Planilha de treino <i class="bi bi-clipboard-check-fill"></i></h3>
-                        <p>Com determinação e foco, eu planejo seus treinos e te conduzo diretamente ao seu objetivo.</p>
-                    </div>
-                </div><!--text-->
-        </div>  
-        <a href="shre.ink/HOnX"><button>Whatssap</button></a>
-        </section><!--consultoria-->
-
-        <section class="projetos-container section-container">
-                <h2 id="projetos">Projetos</h2>
+                        <div class="text-aulas">
+                            <h3>Planilha de treino <i class="bi bi-clipboard-check-fill"></i></h3>
+                            <p>Com determinação e foco, eu planejo seus treinos e te conduzo diretamente ao seu objetivo.</p>
+                        </div>
+                    </div><!--text-aulas-->
+                </div>  
+                        <a href="shre.ink/HOnX"><button>Whatssap</button>
+                        </a>
+                </div>
+        </section>  <!--consultoria-->
+        
+        <section class="projetos-container section-container" id="projetos">
+                <h2>Projetos</h2>
                 <div class="projetos">
                     
                     <div class="projeto-card">
@@ -208,82 +221,82 @@
                 </div>
         </section><!--projetos-container-->
 
-        <section class="depoimetos section-container">
-            <h2 id="depoimentos">Depoimentos</h2>
-           <div class="depoimetos-container section-container">
-              
-                <div class="slide-box">
-                    <i class="bi bi-quote"></i>
-                    <p class="depoimento-txt">
-                        Eu sempre comecei meus processos de emagrecimento por dietas alimentares malucas. Foi uma vida de frustrações, emagrece e engorda.... 
-                        Desta vez decidi fazer diferente, comecei por me exercitar, a sua consultoria Tita, na época, me pareceu a melhor escolha, pensei na comodidade de treinar em casa. 
-                        Já foram tantos benefícios, que é até difícil listar, hoje voltei a me alimentar melhor, tenho disposição para o que preciso fazer, eu VOLTEI DORMIR, alguns períodos até tomei medicamento pra dormir, e hoje, ainda que amamentando durante a noite, eu consigo ter uma noite de sono, e levantar disposta. Eu falo que hoje minha maior motivação pra ser disciplinada é poder dormir, por que isso me traz qualidade de vida, disposição pra brincar, correr e pular com minha filha de 2 anos; bom humor, paciência pra lidar com um filho pré adolescente!
-                    </p>
-                    <div class="pessoa">
-                        <img src="imagens/layra.jpeg" alt="foto perfil">
-                        <div class="info-pessoa">
-                            <p class="nome">Layra Moreno</p>
-                            <p class="func-pessoa">Paisagista</p>
-                        </div><!--info-pessoa-->
-                        <p> <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
+        <section class="depoimetos section-container"   id="depoimentos">
+            <div class="depoi">
+                <h2>Depoimentos</h2>
+                           <div class="depoimetos-container section-container">
+                
+                    <div class="slide-box">
+                        <i class="bi bi-quote"></i>
+                        <p class="depoimento-txt">
+                            Eu sempre comecei meus processos de emagrecimento por dietas alimentares malucas. Foi uma vida de frustrações, emagrece e engorda....
+                            Desta vez decidi fazer diferente, comecei por me exercitar, a sua consultoria Tita, na época, me pareceu a melhor escolha, pensei na comodidade de treinar em casa.
+                            Já foram tantos benefícios, que é até difícil listar, hoje voltei a me alimentar melhor, tenho disposição para o que preciso fazer, eu VOLTEI DORMIR, alguns períodos até tomei medicamento pra dormir, e hoje, ainda que amamentando durante a noite, eu consigo ter uma noite de sono, e levantar disposta. Eu falo que hoje minha maior motivação pra ser disciplinada é poder dormir, por que isso me traz qualidade de vida, disposição pra brincar, correr e pular com minha filha de 2 anos; bom humor, paciência pra lidar com um filho pré adolescente!
                         </p>
-                    </div><!--pessoa-->
-                </div>
-
-                <div class="slide-box">
-                    <i class="bi bi-quote"></i>
-                    <p class="depoimento-txt">
-                        Praticar exercício físico é algo que eu fazia mais por obrigação do que por prazer, na fase adulta da vida. Em janeiro de 2023, resolvi fazer uma aula teste de personal com a Tita (sem muita esperança, mas com muita curiosidade). Logo no primeiro encontro, percebi que a didática da Tita é muito particular. Ela ouve a necessidade e entende as limitações  de cada pessoa - até mesmo o estado de ânimo  do dia. Em alguns meses com ela perdi peso, tonifiquei músculos (que nem sabia da existência rs) e comecei até a gostar de fazer esporte. Qual o segredo da Tita? É um combinado de fatores que só ela sabe fazer. Cada aula dela tem uma dinâmica pensada, com movimentos diferentes e novidades. A motivação que a Tita traz para cada encontro é algo especial - faz com que a gente tenha realmente vontade de se exercitar. A Tita me incentivou a começar a correr e, com ela, participei da primeira corrida da minha vida em dezembro de 2023. Nunca imaginei poder completar uma corrida - e quando eu cruzei a linha de chegada, não tinha como conter a emoção de sentir que eu era capaz sim de superar meus limites e cumprir uma meta estabelecida comigo mesma. Sem a Tita, isso não teria sido possível. À Tita eu só tenho a agradecer imensamente e hoje em dia espero cada aula ansiosa, para saber o que a Tita preparou de especial e poder continuar me propondo novos desafios...
-
-                    </p>
-                    <div class="pessoa">
-                        <img src="imagens/aline-150-200.jpeg" alt="foto perfil">
-                        <div class="info-pessoa">
-                            <p class="nome">Aline stivaletti</p>
-                            <p class="func-pessoa">Educadora</p>
-                        </div><!--info-pessoa-->
-                        <p> <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
+                        <div class="pessoa">
+                            <img src="imagens/layra.jpeg" alt="foto perfil">
+                            <div class="info-pessoa">
+                                <p class="nome">Layra Moreno</p>
+                                <p class="func-pessoa">Paisagista</p>
+                            </div><!--info-pessoa-->
+                            <p> <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </p>
+                        </div><!--pessoa-->
+                    </div>
+                    <div class="slide-box">
+                        <i class="bi bi-quote"></i>
+                        <p class="depoimento-txt">
+                            Praticar exercício físico é algo que eu fazia mais por obrigação do que por prazer, na fase adulta da vida. Em janeiro de 2023, resolvi fazer uma aula teste de personal com a Tita (sem muita esperança, mas com muita curiosidade). Logo no primeiro encontro, percebi que a didática da Tita é muito particular. Ela ouve a necessidade e entende as limitações  de cada pessoa - até mesmo o estado de ânimo  do dia. Em alguns meses com ela perdi peso, tonifiquei músculos (que nem sabia da existência rs) e comecei até a gostar de fazer esporte. Qual o segredo da Tita? É um combinado de fatores que só ela sabe fazer. Cada aula dela tem uma dinâmica pensada, com movimentos diferentes e novidades. A motivação que a Tita traz para cada encontro é algo especial - faz com que a gente tenha realmente vontade de se exercitar. A Tita me incentivou a começar a correr e, com ela, participei da primeira corrida da minha vida em dezembro de 2023. Nunca imaginei poder completar uma corrida - e quando eu cruzei a linha de chegada, não tinha como conter a emoção de sentir que eu era capaz sim de superar meus limites e cumprir uma meta estabelecida comigo mesma. Sem a Tita, isso não teria sido possível. À Tita eu só tenho a agradecer imensamente e hoje em dia espero cada aula ansiosa, para saber o que a Tita preparou de especial e poder continuar me propondo novos desafios...
                         </p>
-                    </div><!--pessoa-->
-                </div>
-
-                <div class="slide-box">
-                    <i class="bi bi-quote"></i>
-                    <p class="depoimento-txt">
-                        Gostaria de falar  do dia que decidi fazer parte da consultoria, queria mudar ficar com um corpo bonito pro verão e comecei fazer os treinos, mas depois de uns tempos a qualidade de vida que tive foi maravilhosa.
-                        Dia 15/10/2023 participei da minha primeira corrida do outubro rosa corri 5 km com a melhor personal que tem e hoje treino pela minha qualidade de vida!!!
-                         Começou pela procura do corpo perfeito e agora e por conta da qualidade de vida que melhorou muito!!!!
-                    </p>
-                    <div class="pessoa">
-                        <img src="imagens/viviane.jpeg" alt="foto perfil">
-                        <div class="info-pessoa">
-                            <p class="nome">Viviane de Souza</p>
-                            <p class="func-pessoa">Autônoma</p>
-                        </div><!--info-pessoa-->
-                        <p> <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
+                        <div class="pessoa">
+                            <img src="imagens/aline-150-200.jpeg" alt="foto perfil">
+                            <div class="info-pessoa">
+                                <p class="nome">Aline stivaletti</p>
+                                <p class="func-pessoa">Educadora</p>
+                            </div><!--info-pessoa-->
+                            <p> <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </p>
+                        </div><!--pessoa-->
+                    </div>
+                    <div class="slide-box">
+                        <i class="bi bi-quote"></i>
+                        <p class="depoimento-txt">
+                            Gostaria de falar  do dia que decidi fazer parte da consultoria, queria mudar ficar com um corpo bonito pro verão e comecei fazer os treinos, mas depois de uns tempos a qualidade de vida que tive foi maravilhosa.
+                            Dia 15/10/2023 participei da minha primeira corrida do outubro rosa corri 5 km com a melhor personal que tem e hoje treino pela minha qualidade de vida!!!
+                             Começou pela procura do corpo perfeito e agora e por conta da qualidade de vida que melhorou muito!!!!
                         </p>
-                    </div><!--pessoa-->
-                </div>
-            </div><!--depoimetos-container--> 
+                        <div class="pessoa">
+                            <img src="imagens/viviane.jpeg" alt="foto perfil">
+                            <div class="info-pessoa">
+                                <p class="nome">Viviane de Souza</p>
+                                <p class="func-pessoa">Autônoma</p>
+                            </div><!--info-pessoa-->
+                            <p> <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </p>
+                        </div><!--pessoa-->
+                    </div>
+                </div><!--depoimetos-container-->
+            </div> 
         </section><!--depoimetos interface-->
     </main>
+
     <footer class="footer">
-        <section class="top-header section-container">
+        <section class="top-header section-container" id="contatos">
             <div class="footer-botton">
                 <a href="#contatos" >
-                    <img class="img-logo" src="imagens/boneca-transp-1280-200.png" alt="Boneca">
+                    <img class="img-logo" src="imagens/tita-souza-personal-transparente.png" alt="Boneca">
                 </a>
                 <div class="btn-contatos-footer">
                     <ul class="contatos-btn">

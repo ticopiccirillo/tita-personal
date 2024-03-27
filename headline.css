@@ -9,8 +9,17 @@ main .container{
 .container .headline{
     width: 100%;
     height: auto;
-    margin: 190px auto;
+    margin: 140px auto;
     padding: 1em;
+}
+
+container .headline h1{
+    display: block;
+    width: 100%;
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: 600;
+    margin: 0 auto;
     
 }
 
@@ -34,7 +43,6 @@ main .container{
     display: flex;
     width: auto;
     margin: 0 auto;
-    text-align: justify;
     align-items: center;
     justify-content: center;
 }
@@ -54,22 +62,25 @@ main .container .text p{
     background-color: var(--cor7);
     border-radius: 0 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.489);
-    line-height: 30px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 1300px){
+   
 }
 
 @media screen and (max-width: 810px){
     .container .headline h1{
         display: block;
-        position: relative;
         width: 100%;
         font-size: 1.8em;
         text-align: center;
         font-weight: 600;
-        margin: 0 auto;
+        margin: auto;
     }
 
     .container span{
-        width: 80%;
+        width: 100%;
         font-size: 1.5em;
     }
         
@@ -88,21 +99,18 @@ main .container .text p{
     .container .headline h1{
         display: block;
         width: 100%;
+        height: 30vh;
         margin: auto;
-        height: auto;
+        margin-top: 30px;
         font-size: 1em;
         line-height: 25px;
-        text-align: center;
     }
 
     .container span{
-        width: 100%;
-        font-size: 0.8em;  
+        font-size: 1em;  
     }
 
     main .container .text p{
-        line-height: 25px;
-        display: block;
-        margin: auto;
+        line-height: 20px;
     }
 }

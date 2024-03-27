@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    background-color: transparent;
 }
 
 .footer .text-footer{
@@ -20,78 +21,50 @@
 .footer .top-header .footer-botton{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin:  0 auto;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .footer .top-header .footer-botton .img-logo{
-    display: flex;
-    width: 150px;
+    display: block;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 810px){
-    .footer .top-header{
-        display: flex;
-        width: 90%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .footer .top-header .footer-botton .img-logo{
-        display: flex;
-        width: 90%;
-        align-items: center;
-        justify-content: space-between; 
-    }
-
-    .footer .top-header .footer-botton{
-        display: flex;
-        width: 90%;
-        justify-content: space-between;
-    }
+   
 }
 
 @media screen and (max-width: 430px){
-    footer .top-header{
-        display: flex;
-        width: 90%;
+    .footer .top-header{
         height: auto;
-        align-items: center;
-        justify-content: center;
         margin: auto;
     }
     
     .footer .text-footer{
         width: 90%;
-        font-size: .95em;
+        font-size: 1.3em;
     }
 
     .footer .top-header .footer-botton .img-logo{
         display: block;
-        width: 150px;
-        height: 100px;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
+        margin: -50px -50px;
     }
 
     .footer .top-header .footer-botton{
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
         width: 100%;
         align-items: center;
         justify-content: center;
-        align-items: center;
-        margin: auto;
     }
 
     .footer .top-header .footer-botton .btn-contatos-footer .contatos-btn {
        display: flex;
-       width: 90%;
-       margin: 20px auto;
-    }
-
-    .footer .top-header .footer-botton .btn-contatos-footer .contatos-btn .btn:hover{
-        width: 35px;
+       width: 100%;
+       margin-right: 20px;
     }
 
     .contatos-btn .btn .icon{
@@ -99,6 +72,11 @@
     }
 
     .contatos-btn .btn .text{
-        display: none;
+        display: block;
+    }
+
+    .footer .text-footer{
+        display: flex;
+        font-size: 1em;
     }
 }

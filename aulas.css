@@ -1,3 +1,21 @@
+.consultoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: auto;
+}
+
+.consultorias{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    margin: auto;
+    height: auto;
+}
+
 .Consultoria-cards{
     display: flex;
     width: 100%;
@@ -10,7 +28,7 @@
 .Consultoria-cards .text-aulas{
     background-color: var(--cor7);
     width: 400px;
-    height: 400px;
+    height: 300px;
     border-radius: 0 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.489);
 }
@@ -22,14 +40,6 @@
     font-size: 1.5em;
     font-weight: 500;
     gap: 50px;
-}
-
-.consultoria{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .consultoria .Consultoria-cards .text-aulas button{
@@ -70,6 +80,13 @@
 }
 
 @media screen and (max-width: 810px) {
+
+   .consultorias{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+   }
    
     .Consultoria-cards{
         display: flex;

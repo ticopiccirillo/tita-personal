@@ -4,31 +4,28 @@
     align-items: center;
     justify-content: center;
     margin: 8em auto 2em auto;
-    height: auto;
+    min-height: 100vh;
 }
-
-
 
 .sobre .text p{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 90%;
-    height: auto;
+    width: 90%;
+    height: 100%;
     margin: auto;
     padding: 2em;
     font-size: 1em;
-    line-height: 35px;
     background-color: var(--cor7);
     border-radius: 0 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.489);
+    line-height: 25px;
 }
 
 .sobre .img-tita img{
     width: 250px;
     border-radius: 50%;
-    margin: auto 0;
 }
 
 @media screen and (max-width: 810px){
@@ -44,7 +41,7 @@
     }
 
     .sobre .text p{
-        line-height: 25px;
+        line-height: 20px;
         display: block;
     }
 }
@@ -56,11 +53,10 @@
     }
     
     .sobre .img-tita img{
-        width: 200px;
+        width: 150px;
     }
 
     .sobre .text p{
-        text-align: justify;
-        line-height: 30px;
+        line-height: 20px;
     }
 }

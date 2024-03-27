@@ -1,9 +1,10 @@
 .projetos-container {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    padding-bottom: 2em;
+    align-items: center;
+    justify-content: center;
     margin: auto;
+    min-height: 100%;
 }
 
 .projetos-container .projetos{
@@ -44,9 +45,7 @@
     .projetos-container .projetos .projeto-card{
         width: 100%;
         height: auto;
-    }
-
-   
+    }   
 }
 
 @media screen and (max-width: 810px) {
