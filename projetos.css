@@ -3,8 +3,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: auto;
-    min-height: 100%;
+    margin: 8em auto 2em auto;
+    min-height: calc(100vh - 200px);
+}
+
+.projetos h2{
+    display: flex;
+    width: 100%;
 }
 
 .projetos .projeto{
@@ -39,6 +44,7 @@
     width: 300px;
     height: 300px;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.489);
 }
 
 @media screen and (max-width: 1300px){
