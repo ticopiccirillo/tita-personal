@@ -1,4 +1,4 @@
-.projetos-container {
+.projetos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,19 +7,19 @@
     min-height: 100%;
 }
 
-.projetos-container .projetos{
+.projetos .projeto{
     display: flex;
     margin: auto;
 }
 
-.projetos-container .projetos .projeto-card{
+.projetos .projeto .projeto-card{
     width: auto;
     height: auto;
     margin: auto;
     padding: 2em;
     }
 
-.projetos-container .projetos a{
+.projetos .projeto a{
     color: var(--cor6);
     display: flex;
     text-decoration: none;
@@ -27,7 +27,7 @@
     justify-content: center;
 }
 
-.projetos-container .projetos .projeto-card h4{
+.projetos .projeto .projeto-card h4{
  text-align: center;
  align-items: center;
  border-radius: 20px;
@@ -35,14 +35,14 @@
  color: var(--cor4);
 } 
 
-.projetos-container .projetos .projeto-card img{
+.projetos .projeto .projeto-card img{
     width: 300px;
     height: 300px;
     border-radius: 20px;
 }
 
 @media screen and (max-width: 1300px){
-    .projetos-container .projetos .projeto-card{
+    .projetos .projeto .projeto-card{
         width: 100%;
         height: auto;
     }   
@@ -50,38 +50,39 @@
 
 @media screen and (max-width: 810px) {
 
-    .projetos-container .projetos{
+    .projetos .projeto{
         width: 100%;
     }
 
-    .projetos-container .projetos .projeto-card{
+    .projetos.projeto .projeto-card{
         width: 200px;
         height: auto;
        
     }
 
-    .projetos-container .projetos .projeto-card img{
+    .projetos .projeto .projeto-card img{
         display: flex;
         width: 230px;
         height: 280;
     }
 
-    .projetos-container .projetos .projeto-card h4{
+    .projetos .projeto .projeto-card h4{
       font-size: 1.2em;
 }
 }
 
 @media screen and (max-width: 430px) {
-    .projetos-container .projetos{
+    .projetos .projeto{
         display: block;
         width: 100%;
     }
 
-    .projetos-container .projetos .projeto-card{
+    .projetos .projeto .projeto-card{
         width: 100%;
     }
 
-    .projetos-container .projetos .projeto-card img{
+    .projetos .projeto .projeto-card img{
         width: 90%;
         height: 280;
     }
+}

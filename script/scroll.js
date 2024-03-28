@@ -1,4 +1,4 @@
-/*const menuItens = document.querySelectorAll('.nav a[href^="#"]');
+const menuItens = document.querySelectorAll('.nav a[href^="#"]');
 
 menuItens.forEach(item => {
 item.addEventListener('click', scrollToIdOnClick);
@@ -21,4 +21,4 @@ function scrollToPosition(to) {
 function getScrollTopByHref(element) {
     const id = element.getAttribute('href');
     return document.querySelector(id).offsetTop;
-}*/
+}

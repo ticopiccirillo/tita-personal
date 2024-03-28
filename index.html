@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"><link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +28,13 @@
 
    <script src="script/menu.js" defer></script>
    <script src="script/scroll.js" defer></script>
+ 
+
+   <script src="https://unpkg.com/scrollreveal"></script>
+   <script>
+    ScrollReveal({ reset: true });
+    </script>
+   <script src="script/scroll-suave.js" defer></script>
 
     <title>Tita Souza - Personal trainer</title>
 </head>
@@ -69,8 +76,6 @@
                 </nav><!--nav-->
 
                 <!--Menu mobile-->
-
-                
                 <div class="menu-mobile" id="menu-mobile" >
                     <div class="btn-fechar">
                         <i class="bi bi-x-lg"></i>
@@ -138,11 +143,11 @@
     <main>
         <section class="container section-container">
             <div class="headline">
-                <h1>Transforme seu corpo e sua vida com os melhores programas de treinamento personalizados.
+                <h1 class="efeito-headline">Transforme seu corpo e sua vida com os melhores programas de treinamento personalizados.
                 </h1>
-                <span> Cuide-se bem, sempre é tempo!</span>
+                <span class=" efeito-span"> Cuide-se bem, sempre é tempo!</span>
             </div><!--headline-->
-           <div class="boneca-texto"> 
+           <div class="boneca-texto  efeito-boneca"> 
                 <div class="img-boneca">
                     <img src="imagens/boneca-transp-1280-600.png" alt="Boneca">
                 </div>
@@ -152,7 +157,7 @@
         </div><!--boneca-texto-->
         </section>
 
-        <section class="sobre section-container" id="sobre">
+        <section class="sobre section-container efeito-sobre" id="sobre">
             <div class="text">
                 <h2 id="sobre-titulo" >Minha história</h2>
                 <div class="text-sobre">
@@ -172,10 +177,10 @@
             </div>
         </section><!--sobre-->
 
-        <section class="consultoria section-container" id="consultoria">
-                <h2 >Consultoria</h2>
+        <section class="consultoria section-container efeito-consult" id="consultoria">
+                <h2>Consultoria</h2>
                 <div class="Consultoria-cards">
-                    <div class="text-aulas">
+                    <div class="text-aulas efeito-aulas1">
                         <h3>Treino Online <i class="bi bi-phone"></i>
                         </h3>
                         <div class="horarios">
@@ -183,12 +188,12 @@
                             </p>
                         </div>
                     </div><!--text-aulas-->
-                    <div class="text-aulas">
+                    <div class="text-aulas efeito-aulas2">
                             <h3>Treino Presencial <i class="bi bi-person-raised-hand"></i>
                             </h3>
                             <p>Com hora marcada, na academia, na praça, ou na praia.</p>
                     </div><!--text-->
-                        <div class="text-aulas">
+                        <div class="text-aulas efeito-aulas3">
                             <h3>Planilha de treino <i class="bi bi-clipboard-check-fill"></i></h3>
                             <p>Com determinação e foco, eu planejo seus treinos e te conduzo diretamente ao seu objetivo.</p>
                         </div>
@@ -198,32 +203,32 @@
                 </a>
         </section>  <!--consultoria-->
         
-        <section class="projetos section-container" id="projetos">
+        <section class="projetos section-container efeito-proj" id="projetos">
                 <h2>Projetos</h2>
                 <div class="projeto">
                     
-                    <div class="projeto-card">
+                    <div class="projeto-card efeito-proj1">
                         <h4> Cuide-se </h4>
                         <a href="#"><img src="imagens/cuidese300.jpg" alt="Capa do projeto"></a>
                     </div>
 
-                    <div class="projeto-card">
+                    <div class="projeto-card efeito-proj2">
                         <h4>Novo projeto</h4>
                         <a href="#"><img src="imagens/em-breve-400x300.jpg" alt="Capa do projeto"></a>
                     </div>
 
-                    <div class="projeto-card">
+                    <div class="projeto-card efeito-proj3">
                         <h4>Novo projeto</h4>
                         <a href="#"><img src="imagens/em-breve-400x300.jpg" alt="Capa do projeto"></a>
                     </div>
                 </div><!--projeto-->
         </section><!--projetos-container-->
 
-        <section class="depoimentos section-container" id="depoimentos">
+        <section class="depoimentos section-container efeito-depoi" id="depoimentos">
             <div class="depoi">
                 <h2>Depoimentos</h2>
                 <div class="depoimetos-container section-container">
-                    <div class="slide-box">
+                    <div class="slide-box efeito-depoi1">
                         <i class="bi bi-quote"></i>
                         <p class="depoimento-txt">
                             Eu sempre comecei meus processos de emagrecimento por dietas alimentares malucas. Foi uma vida de frustrações, emagrece e engorda....
@@ -244,7 +249,7 @@
                             </p>
                         </div><!--pessoa-->
                     </div>
-                    <div class="slide-box">
+                    <!--<div class="slide-box2efeito-depoi1">
                         <i class="bi bi-quote"></i>
                         <p class="depoimento-txt">
                             Praticar exercício físico é algo que eu fazia mais por obrigação do que por prazer, na fase adulta da vida. Em janeiro de 2023, resolvi fazer uma aula teste de personal com a Tita (sem muita esperança, mas com muita curiosidade). Logo no primeiro encontro, percebi que a didática da Tita é muito particular. Ela ouve a necessidade e entende as limitações  de cada pessoa - até mesmo o estado de ânimo  do dia. Em alguns meses com ela perdi peso, tonifiquei músculos (que nem sabia da existência rs) e comecei até a gostar de fazer esporte. Qual o segredo da Tita? É um combinado de fatores que só ela sabe fazer. Cada aula dela tem uma dinâmica pensada, com movimentos diferentes e novidades. A motivação que a Tita traz para cada encontro é algo especial - faz com que a gente tenha realmente vontade de se exercitar. A Tita me incentivou a começar a correr e, com ela, participei da primeira corrida da minha vida em dezembro de 2023. Nunca imaginei poder completar uma corrida - e quando eu cruzei a linha de chegada, não tinha como conter a emoção de sentir que eu era capaz sim de superar meus limites e cumprir uma meta estabelecida comigo mesma. Sem a Tita, isso não teria sido possível. À Tita eu só tenho a agradecer imensamente e hoje em dia espero cada aula ansiosa, para saber o que a Tita preparou de especial e poder continuar me propondo novos desafios...
@@ -254,16 +259,16 @@
                             <div class="info-pessoa">
                                 <p class="nome">Aline stivaletti</p>
                                 <p class="func-pessoa">Educadora</p>
-                            </div><!--info-pessoa-->
+                            </div><!--info-pessoa--
                             <p> <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
                             </p>
-                        </div><!--pessoa-->
-                    </div>
-                    <div class="slide-box">
+                        </div>
+                    </div>-->
+                    <div class="slide-box efeito-depoi3">
                         <i class="bi bi-quote"></i>
                         <p class="depoimento-txt">
                             Gostaria de falar  do dia que decidi fazer parte da consultoria, queria mudar ficar com um corpo bonito pro verão e comecei fazer os treinos, mas depois de uns tempos a qualidade de vida que tive foi maravilhosa.

@@ -65,6 +65,12 @@ main .container .text p{
     line-height: 25px;
 }
 
+/*EFEITO SCROLL*/
+
+.efeito-headline, .efeito-span, .efeito-boneca, {
+    visibility: hidden;
+}
+
 @media screen and (max-width: 1300px){
    
 }
