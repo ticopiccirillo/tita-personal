@@ -31,7 +31,7 @@
 }
 
 body{
-    background-color: var(--cor1);
+    background: linear-gradient(210deg,#166273,#388ea1);
  }
 
  .section-container{
