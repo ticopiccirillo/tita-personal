@@ -286,9 +286,7 @@ header {
 
     .btn-contatos{
         display: none;
- 
     }
-
  }
 
  @media screen and (max-width: 430px) {
@@ -326,5 +324,4 @@ header {
         padding: 1em 5%;
         font-size: 1em;
     }
-
  }
