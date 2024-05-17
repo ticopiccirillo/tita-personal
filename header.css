@@ -193,19 +193,20 @@ header {
 .top-header .menu-mobile .menu-list a{
     display: block;
     width: 100%;
-    color: var(--cor7);
+    color: var(--cor4);
     font-size: 1.2em;
     font-weight: 600;
     padding: 1em 0;
     text-shadow:5px 5px 5px rgba(0, 0, 0, 0.726);
     text-decoration: none;
     margin: auto;
-    transition: .8s;
+    transition: 2s;
 }
 
 .top-header .menu-mobile .menu-list a:hover{
-    color: var(--cor2);
-    background-color: var(--cor7);
+    color: var(--cor7);
+    background-color: var(--cor3);
+    transform: scale(1.1);
     width: 100%;
 }
 
@@ -214,8 +215,7 @@ header {
     font-size: 1.5em;
 }
 .top-header .menu-mobile .btn-fechar i{
-    color: var(--cor6);
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 900;
     color: var(--cor7);
 }
@@ -223,15 +223,7 @@ header {
 @media screen and (max-width: 1300px){
 
     .top-header{
-        display: flex;
-        width: 100%;
-        align-items: center;
         justify-content: space-around;
-    }
-
-    .logo{
-        display: block;
-        margin: 20px 5%;
     }
 
     .nav .menu, .nav .menu .menu-list, .nav .menu .menu-list a, .btn-contatos{
@@ -256,9 +248,8 @@ header {
 
     .top-header .menu-mobile{
         display: block;
-        width: ;
         position: absolute;
-        top: 150px;
+        top: 110px;
       }
   
       .top-header .menu-mobile .btn-fechar{
@@ -270,34 +261,12 @@ header {
  /*Responsividade*/
 
  @media screen and (max-width: 810px) {
-
-    .top-header{
-        display: flex;
-        width: 100%;
-        background-color: var(--cor7);    
-    }
-
-    .img-logo{
-        display: block;
-        margin: 20px 5%;
-        width: 120px;
-        height: 120px;
-    }
-
     .btn-contatos{
         display: none;
     }
  }
 
  @media screen and (max-width: 430px) {
-    .top-header{
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
-        background-color: var(--cor7);
-    }
-
     .img-logo{
         display: block;
         margin: 20px 5%;
@@ -306,18 +275,17 @@ header {
     }
 
     .nav, .btn-contatos{
-        
         display: none;
     }
 
     .btn-contatos {
-            display: none;
+        display: none;
     }
 
      .top-header .menu-mobile{
         display: block;
         position: absolute;
-        top: 150px;
+        top: 110px;
       }
 
       .top-header .menu-mobile .btn-fechar{

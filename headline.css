@@ -36,6 +36,11 @@ container .headline h1{
     font-size: 2em;
     background-color: #f2e93d;
     color: #102D40;
+    transition: 1s;
+}
+
+.container span:hover{
+    transform: scale(1.1);
 }
 
 .container .boneca-texto{
@@ -64,26 +69,8 @@ main .container .text p{
     line-height: 25px;
 }
 
-/*EFEITO SCROLL*/
-
-.efeito-headline, .efeito-span, .efeito-boneca, {
-    visibility: hidden;
-}
-
-@media screen and (max-width: 1300px){
-   
-}
-
 @media screen and (max-width: 810px){
-    .container .headline h1{
-        display: block;
-        width: 100%;
-        font-size: 1.8em;
-        text-align: center;
-        font-weight: 600;
-        margin: auto;
-    }
-
+   
     .container span{
         width: 100%;
         font-size: 1.5em;
